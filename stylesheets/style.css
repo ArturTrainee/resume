@@ -11,7 +11,6 @@ body {
   transition: opacity 1s ease-in-out;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
-  -ms-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
 }
 
@@ -24,7 +23,6 @@ body {
   transition: opacity 1s ease-in-out;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
-  -ms-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   background-color: black;
 }
@@ -132,7 +130,7 @@ i {
   padding-bottom: 1.2em;
 }
 
-#date {
+.block-title {
   font-size: 16px;
 }
 
@@ -164,15 +162,15 @@ i {
   transform: scale(1.005);
 }
 
-#education-list {
+.list {
   margin-top: -0.7em;
 }
 
-#education-list li {
+.list li {
   padding: 0.5em;
 }
 
-#education-list li:hover {
+.list li:hover {
   color: #262b83;
   background: #f7f6fc;
 }
