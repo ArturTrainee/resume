@@ -13,7 +13,6 @@
 html {
 	font-size: 14px;
 	-webkit-text-size-adjust: 100%;
-	text-size-adjust: 100%;
 	box-sizing: border-box;
 }
 
@@ -85,6 +84,10 @@ section {
 	padding: 1em 0;
 }
 
+section:first-child {
+	padding: 0;
+}
+
 p {
 	margin: 0 0 1em;
 	line-height: 1.4285em;
@@ -122,7 +125,7 @@ li {
 
 ul>li:before {
 	content: "●";
-	font-family: "Arial";
+	font-family: "Arial", serif;
 	float: left;
 	width: 1.5em;
 	margin-left: -1.5em;
@@ -160,13 +163,13 @@ a {
 	text-decoration: none;
 }
 
-a[rel="external"]:not(.label):hover, a.language:hover span {
+a[rel="external"]:not(.label):hover, a.bold-text:hover span {
 	text-decoration: underline;
 }
 
 code {
 	border: 1px solid #BDBDBD;
-	padding: 0em 0.25em;
+	padding: 0 0.25em;
 	border-radius: 3px;
 	background: #EEEEEE;
 	font-size: 95%;
@@ -220,7 +223,6 @@ button {
 
 button, [type="button"] {
 	-webkit-appearance: button;
-	appearance: button;
 }
 
 /* Remove the inner border and padding in Firefox	*/
@@ -243,13 +245,9 @@ button:-moz-focusring, [type="button"]:-moz-focusring {
 	padding: 0;
 }
 
-/* Utiltities */
-
 .nowrap {
 	white-space: nowrap;
 }
-
-/* Article */
 
 article {
 	max-width: 100%;
@@ -335,7 +333,6 @@ article {
 */
 
 .grid {
-	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: stretch;
@@ -362,9 +359,7 @@ article {
 	justify-content: inherit;
 	align-items: stretch;
 	width: 100% !important;
-	padding: 0rem;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding: 1rem 0;
 }
 
 /* Columns */
@@ -395,8 +390,7 @@ article {
 }
 
 .grid>.row>.column {
-	margin-top: 0;
-	margin-bottom: 0;
+	margin: 0 auto;
 }
 
 /* Assume full width with one column */
@@ -456,7 +450,7 @@ article {
 }
 
 .grid>.row>[class*="thirteen wide"].column, .grid>.column.row>[class*="thirteen wide"].column, .grid>[class*="thirteen wide"].column, .column.grid>[class*="thirteen wide"].column {
-	width: 81.25% !important;
+	width: 76% !important;
 }
 
 .grid>.row>[class*="fourteen wide"].column, .grid>.column.row>[class*="fourteen wide"].column, .grid>[class*="fourteen wide"].column, .column.grid>[class*="fourteen wide"].column {
@@ -533,11 +527,8 @@ article {
 	width: 33%;
 }
 
-/* Language */
-
-.language {
+.bold-text {
 	font-weight: 600;
-	white-space: nowrap;
 }
 
 /* Labels */
@@ -832,7 +823,7 @@ li.bordered>ul>li.details>div, li.bordered>ul>details>div {
 .tags.bulleted .tag:not(:last-child):after {
 	content: "●";
 	display: inline-block;
-	font-family: "Arial";
+	font-family: "Arial", serif;
 	font-size: 1rem;
 	margin: 0 0.25em 0 0.25em;
 }
