@@ -1,9 +1,9 @@
 body {
-  background-color: black;
+  background-color: #201E1F;
 }
 
 #loader {
-  background-color: black;
+  background-color: #201E1F;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -24,7 +24,7 @@ body {
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
-  background-color: black;
+  background-color: #201E1F;
 }
 
 #content.appear {
