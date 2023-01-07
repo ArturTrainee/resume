@@ -1,5 +1,5 @@
 window.onload = function() {
-	this.setTimeout(showPage, 1000);
+	this.setTimeout(showPage, 500);
 }
 
 function showPage() {
